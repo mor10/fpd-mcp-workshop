@@ -1,0 +1,26 @@
+{
+  "name": "Hands-On MCP: Connect Anything to AI | A Future Product Days 2025 workshop by @mor10",
+  "features": {},
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        // Always open README.md on load. - DO NOT REMOVE
+        "README.md"
+      ]
+    },
+    "vscode": {
+      // Set *default* container-specific settings.json values on container create. - DO NOT REMOVE
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        // LinkedIn Learning Theme - DO NOT REMOVE
+        "linkedinlearning.linkedinlearning-vscode-theme"
+        // Additional Extensions Here
+      ]
+    }
+  },
+  "postCreateCommand": "sh .devcontainer/startup.sh"
+}
+// DevContainer Reference: https://containers.dev/implementors/json_reference/
