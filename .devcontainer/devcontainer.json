@@ -15,9 +15,8 @@
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        // LinkedIn Learning Theme - DO NOT REMOVE
-        "linkedinlearning.linkedinlearning-vscode-theme"
-        // Additional Extensions Here
+        "linkedinlearning.linkedinlearning-vscode-theme",
+        "ms-python.python"
       ]
     }
   },
