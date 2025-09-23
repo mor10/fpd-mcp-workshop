@@ -113,10 +113,9 @@ Add a Tool:
 ```python
 # Add a tip calculator tool
 @mcp.tool()
-def add(a: int, b: int) -> int:
+def calculate_tip(bill_amount: int, tip_percentage: float = 0.15) -> float:
     """Calculate tips for a given bill amount and tip percentage"""
-    tip_percentage = 0.15
-    return a + (a * tip_percentage)
+    return bill_amount * tip_percentage
 ```
 
 #### Resources
@@ -157,6 +156,14 @@ def greet_user(name: str, style: str = "friendly") -> str:
 
 ### 5. Run MCP server in dev mode with the [MCP Inspector](https://github.com/modelcontextprotocol/inspector)
 
+Online version:
+
+```bash
+npx @modelcontextprotocol/inspector uv run server.py
+```
+
+Local version:
+
 ```bash
 uv run mcp dev server.py
 ```
@@ -172,14 +179,14 @@ uv run mcp dev server.py
   ```json
   {
     "servers": {
-      "weather-server": {
+      "simple-server": {
         "type": "stdio",
         "command": "uv",
         "args": [
           "run",
           "--directory",
-          "/absolute/path/to/simple-server/simple-mcp-server",
-          "simple-mcp-server"
+          "/absolute/path/to/simple-mcp-server",
+          "server.py"
         ]
       }
     },
@@ -220,7 +227,7 @@ uv run mcp install server.py
   ```json
   {
     "mcpServers": {
-      "Open-Meteo Weather": {
+      "Simple MCP Server": {
         "command": "/opt/homebrew/bin/uv",
         "args": [
           "run",
@@ -228,9 +235,9 @@ uv run mcp install server.py
           "mcp[cli]",
           "mcp",
           "run",
-          "/absolute/path/to/weather-server/mcp_open_meteo/server.py"
+          "/absolute/path/to/simple-mcp-server/server.py"
         ]
       }
     }
-   }
-   ```
+  }
+  ```

@@ -8,10 +8,10 @@ def main():
 
 # Add a tip calculator tool
 @mcp.tool()
-def add(a: int, b: int) -> int:
+def calculate_tip(bill_amount: int, tip_percentage: float = 0.15) -> float:
     """Calculate tips for a given bill amount and tip percentage"""
-    tip_percentage = 0.15
-    return a + (a * tip_percentage)
+    tip_amount = round(bill_amount * tip_percentage, 2)
+    return tip_amount
 
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")

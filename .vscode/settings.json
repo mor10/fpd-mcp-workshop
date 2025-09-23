@@ -16,7 +16,10 @@
   "files.autoSave": "afterDelay",
   "notebook.output.wordWrap": true,
   "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "LinkedIn Learning Dark",
+  "workbench.colorTheme": "LinkedIn Learning Light",
   "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "terminal.integrated.env.osx": {
+    "ZDOTDIR": "${workspaceFolder}/.vscode/zsh"
+  }
 }
