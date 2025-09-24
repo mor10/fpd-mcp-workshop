@@ -16,7 +16,7 @@
   "files.autoSave": "afterDelay",
   "notebook.output.wordWrap": true,
   "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "LinkedIn Learning Light",
+  "workbench.colorTheme": "LinkedIn Learning Dark",
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "terminal.integrated.env.osx": {
