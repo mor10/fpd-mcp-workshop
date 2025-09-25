@@ -74,6 +74,7 @@ Send a message in the #future-product-days channel saying "Success! (this messag
 
 - [Model Context Protocol: Official docs](https://modelcontextprotocol.io/)
 - [GitHub MCP Registry](https://github.com/mcp)
+- [MCP Registry](https://github.com/modelcontextprotocol/registry)
 - [MCP GitHub Org with lots of repos](https://github.com/modelcontextprotocol)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
